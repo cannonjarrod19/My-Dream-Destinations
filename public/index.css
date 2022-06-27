@@ -1,0 +1,115 @@
+body {
+  box-sizing:border-box;
+  margin: 0;
+  font-family: 'Lora', serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:coral;
+  color: white;
+}
+
+.nav-title {
+  font-size: 1.5em;
+}
+
+.nav-icon {
+  font-size: 2em;
+  margin-right: 0.5em;
+}
+
+.destination-card {
+  display: flex;
+  margin: 0 3em;
+  padding: 3em 0;
+  max-width: 100%;
+  border-bottom: 1px black solid;
+  
+}
+
+.destination-card:last-child {
+  border-bottom: none;
+}
+
+.img-container {
+  width: 35%;
+  align-self: center;
+}
+
+.destination-img {
+  width:100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0.2em 0.2em 0.75em rgba(0,0,0,0.7);
+}
+
+.destination-content {
+  width: 60%;
+  max-width: 700px;
+  margin: 0 1.5em;
+}
+
+.location-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  
+}
+
+.location-link > h3 {
+  margin: 0.5em 0.75em 0.5em 0;
+  letter-spacing: 1px;
+  text-transform:uppercase;
+  font-size: 0.8em;
+  
+}
+
+.location-link > a {
+  color: grey;
+}
+
+.location-link > a:focus,
+.location-link > a:hover {
+  opacity: 0.6
+}
+
+.location-icon {
+  color: coral;
+}
+
+.dates {
+  font-weight: 700;
+  margin-bottom: 0.75em;
+}
+
+.about {
+  margin: 0;
+  line-height: 1.6em;
+}
+
+.destination-title {
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+@media (max-width: 750px) {
+  .destination-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .destination-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .img-container {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+}
+
